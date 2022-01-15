@@ -144,9 +144,15 @@ footer{
       </p> 
     
     <footer>
-      <p>&copy; 2022 Kally K. Mukeba📍 Lubumbashi </p>
+      &copy; 2022 Kally K. Mukeba📍 Lubumbashi | Today's date: <span id="currentdate"></span>
     
     </footer>
-    </div>
+  </div>
+    <script>
+      const options = {weekday:"long", day: "numeric", month: "long", year: "numeric"};
+      document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-Us", options);
+
+    </script>
+
   </body>
 </html>
